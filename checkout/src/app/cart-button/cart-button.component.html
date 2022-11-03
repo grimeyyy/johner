@@ -1,0 +1,10 @@
+<a routerLink="/checkout"
+   routerLinkActive="active"
+   ariaCurrentWhenActive="page"
+   class="btn btn-primary position-relative">
+  <i class="bi bi-cart"></i>&nbsp;
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+    {{productsService.numberOfProductsInCart}}&nbsp;
+    <span class="visually-hidden">products in cart</span>
+  </span>
+</a>

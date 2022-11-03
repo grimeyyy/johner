@@ -1,0 +1,15 @@
+<ng-container *ngIf="products">
+  <div class="card my-3" *ngFor="let product of products">
+    <div class="card-header">
+      {{product.title}}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{product.description}}</p>
+      <button class="btn btn-primary" type="button" (click)="addToCart(product)">
+        <i class="bi bi-cart-plus-fill"></i>
+      </button>
+    </div>
+    <div class="card-footer">{{product.price}}€</div>
+  </div>
+</ng-container>
+
